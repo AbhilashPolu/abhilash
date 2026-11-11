@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>------</title>
+</head>
+<body>
+    <script>
+    /*let age =30; //gobal variable
+        function student() {
+    let age = 21;  // Local variable
+
+    document.write(age);  console.log(age);
+    
+    }
+    document.write(age);
+    document.write("<br>");
+
+student();*/
+    function calTotal(m1,m2,m3,m4,m5){
+        return(m1+m2+m3+m4+m5);
+    }
+    function calAverage(Total){
+        return Total/5;
+    }
+    function checkResult(average){
+        if(average>=40){
+            return "pass";
+        }
+        else{
+            return "fail";
+        }
+    }
+    function dispayResult(){
+        let m1=85;
+        let m2=90;
+        let m3=78;
+        let m4=88;
+        let m5=95;
+        let total=calTotal(m1,m2,m3,m4,m5);
+        let average=calAverage(total);
+        let result =checkResult(average);
+        document.write(total);
+        document.write("<br>");
+        document.write(average);
+        document.write("<br>");
+        document.write(result);
+
+    }
+    dispayResult();
+
+    </script>
+</body>
+</html>
